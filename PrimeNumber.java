@@ -3,14 +3,25 @@ public class PrimeNumber {
 
 	public static void main(String[] args) {
 		
-		boolean prime = true;
-		int n = (int)Math.floor(Math.random()*100)+1;
+		int n = 23;
 		
-		for (int i=0; i<=n; i++){
+//		while(n<100) {
+//			n++;
+//			System.out.println("n" + n +"   ");
+		boolean prime = true;
+		for(int i=2; i<n; i++) {
+			//System.out.println("i" +i);
 			if (n%i == 0) {
-				prime=false;
-			}System.out.println("the number is " + prime);
-		}
+				prime = false;
+				break;
+			}
+			}if (prime == true){
+				System.out.println("The Number is prime");
+			//}else if(prime == false){
+			}else {
+				System.out.println("The Number is not prime");
+			}
+		//}
 
 	}
 
